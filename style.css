@@ -4,27 +4,32 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    transition: 0.7s linear;
 }
 
 body {
-    background-color: #8A51FC;
+    background: linear-gradient(90deg, rgba(19, 228, 39, 1) 23%, rgba(74, 131, 74, 1) 74%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.logo {
-    width: 300px;
-    margin: 20px auto 0 auto;
-    display: block;
+.emoji {
+    font-size: 150px;
 }
 
 main {
     width: 375px;
     background-color: #f4f4f4;
+    border: 5px solid black;
     border-radius: 20px;
     margin: 0 auto;
     padding: 44px 24px 23px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-
-    label {
+     label {
         color: #777777;
         font-weight: 400;
         font-size: 14px;
@@ -33,7 +38,7 @@ main {
     select,
     input {
         background-color: #ffffff;
-        border: 1px solid #bbbbbb;
+        border: 2px solid black;
         border-radius: 4px;
         height: 48px;
         width: 100%;
@@ -47,16 +52,19 @@ main {
     }
 
     button {
-        background-color: #772fd3;
+        font-size: 20px;
+        background-color: black;
+        color: #32CD32;
         border-radius: 5px;
         width: 100%;
         border: none;
         height: 48px;
-        color: #ffffff;
     }
 
     button:hover {
-        opacity: 0.8;
+        background-color: black;
+        color: #228B22;
+        border-radius: 25px;
         cursor: pointer;
     }
 
@@ -65,7 +73,7 @@ main {
     }
 
     section {
-        border: 1px solid #772FD3;
+        border: 2px solid black;
         border-radius: 20px;
         margin-top: 36px;
         padding: 12px;
@@ -89,11 +97,18 @@ main {
             font-size: 14px;
         }
 
-        .currency-value, .currency-value-to-convert {
+        .currency-value,
+        .currency-value-to-convert {
             color: #555555;
             font-weight: 700;
             font-size: 20px;
         }
     }
 
+}
+
+@media (max-width: 396px) {
+    main {
+        border-radius: 0px;
+    }
 }
