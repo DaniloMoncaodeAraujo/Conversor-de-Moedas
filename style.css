@@ -14,10 +14,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-top: 190px;
 }
 
 .emoji {
-    font-size: 150px;
+    font-size: 200px;
+    position: relative;
+    top: 70px;
+
 }
 
 main {
@@ -36,7 +40,7 @@ main {
     }
 
     select,
-    input {
+    input {  
         background-color: #ffffff;
         border: 2px solid black;
         border-radius: 4px;
