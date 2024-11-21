@@ -13,14 +13,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding-top: 190px;
-}
+    
+height: 100vh;}
 
-.emoji {
-    font-size: 200px;
+.moneyMan {
+    width: 200px;
     position: relative;
-    top: 70px;
+    top: 60px;
 
 }
 
@@ -33,14 +32,14 @@ main {
     padding: 44px 24px 23px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-     label {
+    label {
         color: #777777;
         font-weight: 400;
         font-size: 14px;
     }
 
     select,
-    input {  
+    input {
         background-color: #ffffff;
         border: 2px solid black;
         border-radius: 4px;
@@ -111,8 +110,8 @@ main {
 
 }
 
-@media (max-width: 396px) {
+@media (max-width: 381px) {
     main {
-        border-radius: 0px;
+        width: 350px;
     }
 }
