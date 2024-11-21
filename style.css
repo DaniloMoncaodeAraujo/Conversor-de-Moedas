@@ -12,16 +12,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 170px;
     align-items: center;
     
 height: 100vh;}
 
-.moneyMan {
-    width: 200px;
+.emoji {
+    font-size: 200px;
     position: relative;
-    top: 60px;
-    margin-top: 180px;
-
+    top: 70px;
 }
 
 main {
